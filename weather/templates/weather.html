@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Api</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gradient-to-r  from-slate-500 via-blue-500 from-15% to-slate-100">
+    <div class="row">
+        <div class="col py-3">
+            <h1 class="text-center bg-gradient-to-r from-slate-500 to- text-9xl font-thin">
+                Weather
+            </h1>
+        </div>
+    </div>
+    <div class="row text-center my-28 ">
+        <div class="col-span-2">
+            <form action="">
+                <input type="text" value="{{City}}"  placeholder="Enter the City name " name="Cityname" class="bg-slate-600 text-6xl rounded-3xl text-center">
+                <div class="row">
+                    <div class="col-span-full ">
+                        <button type="submit "
+                            class="bg-black my-16 text-teal-500 text-4xl rounded-2xl px-3 py-3">search</button>
+                    </div>
+                </div>
+            <div class="row">
+                
+        <div class="col-span-4 "> <h2 class="mx-8 text-2xl"> Tempreture : {{temp}}</h2></div>
+        <div class="col-span-4 "><h2 class="mx-8 text-2xl"> Feels Like : {{feel}}</h2></div>
+        <div class="col-span-4 "><h2 class="mx-8 text-2xl">minimum : {{temp_min}}</h2></div>
+
+        </div>
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
